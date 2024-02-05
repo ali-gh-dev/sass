@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   background: var(--body-color);
+  padding: 0.75rem 0;
 }
 
 .nav {
@@ -18,14 +19,15 @@
   .nav__menu {
     @media screen and (max-width: 767px) {
       position: fixed;
-      top: 4rem;
+      top: -100%;
       width: 90%;
       margin: 0 auto;
       background: var(--container-color);
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
       border-radius: 2rem;
       padding: 2.5rem 0;
       text-align: center;
+      transition: 0.4s;
 
       display: flex;
       flex-direction: column;
@@ -33,4 +35,27 @@
       row-gap: 1.5rem;
     }
   }
+
+  .show-menu {
+    top: 4rem;
+  }
+
+  .nav__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+
+  .nav__toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+
+  .nav__item a {
+    color: var(--title-color);
+  }
 }
+
+
