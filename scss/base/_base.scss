@@ -17,6 +17,18 @@ body {
   // transition: 0.5s; //for darkmode
 }
 
+.container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 4rem 0 1rem 0;
+}
+
 ul {
   list-style: none;
 }
@@ -28,6 +40,11 @@ a {
 img {
   width: 100%;
   display: block;
+}
+
+.svg-img {
+  width: 400px;
+  justify-self: center;
 }
 
 h1,
@@ -59,19 +76,12 @@ h4 {
   font-size: 0.875rem;
 }
 
-.container {
-  width: 90vw;
-  max-width: 1170px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1.5rem;
-}
 
 .btn {
   display: inline-block;
   background: var(--primary-color);
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   transition: 0.4s;
 }

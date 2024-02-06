@@ -1,0 +1,21 @@
+.home {
+  padding-top: 5rem ;
+}
+
+.home-content {
+  row-gap: 2.5rem;
+}
+
+.home-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+  span {
+    color: var(--primary-color);
+  }
+}
+
+.home-description {
+  margin-bottom: 2rem;
+}
