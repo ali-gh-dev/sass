@@ -16,6 +16,10 @@
     align-items: center;
     row-gap: 1.5rem;
   }
+
+  .show-menu {
+    top: 4rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -23,7 +27,7 @@
     padding-top: 7rem;
   }
 
-  .home-content {
+  .home-content, .about-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -32,8 +36,12 @@
     width: 100%;
   }
 
-  .home-img {
+  .home-img, .about-info {
     order: 2;
+  }
+
+  .about-info {
+    text-align: right;
   }
 
 }
