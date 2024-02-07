@@ -12,27 +12,26 @@
 <body>
 
 <!--header-->
-<header class="header">
+<header class="header" id="header">
     <nav class="nav container">
         <a class="nav-logo">ali-gh-dev</a>
 
         <ul class="nav-menu" id="nav-menu">
             <li class="nav-item">
-                <a href="#">صفحه اصلی</a>
+                <a class="nav-link active-link" href="#home">صفحه اصلی</a>
             </li>
             <li class="nav-item">
-                <a href="#">درباره ما</a>
+                <a class="nav-link" href="#about">درباره ما</a>
             </li>
             <li class="nav-item">
-                <a href="#">خدمات</a>
+                <a class="nav-link" href="#services">خدمات</a>
             </li>
             <li class="nav-item">
-                <a href="#">ارتباط با ما</a>
+                <a class="nav-link" href="#contact">ارتباط با ما</a>
             </li>
             <li class="light-dark-btn">
                 <i class="bi bi-toggle-off"></i>
             </li>
-
         </ul>
 
         <div class="nav-toggle" id="nav-toggle">
@@ -44,7 +43,7 @@
 </header>
 
 <!--home-->
-<section class="section home">
+<section class="section home" id="home">
     <div class="container home-content">
         <article class="svg-img home-img">
             <img src="./images/1.svg" alt="home-image">
@@ -68,7 +67,7 @@
 </section>
 
 <!--about-->
-<section class="section about">
+<section class="section about" id="about">
     <div class="container about-content">
 
         <article class="about-info">
@@ -88,6 +87,8 @@
 
     </div>
 </section>
+
+<section style="height: 160vh"></section>
 
 
 <script src="./js/app.js"></script>

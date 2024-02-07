@@ -154,6 +154,24 @@ h4 {
   color: var(--title-color);
 }
 
+.header-shadow {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.active-link {
+  position: relative;
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--primary-color);
+  bottom: -0.75rem;
+  left: calc(50% - 1.5rem);
+}
+
 .home {
   padding-top: 5rem;
 }
@@ -188,7 +206,7 @@ h4 {
     row-gap: 1.5rem;
   }
   .show-menu {
-    top: 4rem;
+    top: 4.6rem;
   }
 }
 @media screen and (min-width: 576px) {

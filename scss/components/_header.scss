@@ -34,4 +34,21 @@
   color: var(--title-color);
 }
 
+.header-shadow {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
 
+.active-link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    bottom: -0.75rem;
+    left: calc(50% - 1.5rem);
+  }
+}
