@@ -31,7 +31,8 @@
   .about-content,
   .support-content,
   .services-content,
-  .app-content {
+  .app-content,
+  .contact-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -48,7 +49,9 @@
 
   .about-info,
   .support-info,
-  .app-info {
+  .app-info,
+  .contact-description,
+  .contact-title {
     text-align: right;
   }
 
@@ -101,6 +104,11 @@
 
   .services-content {
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .contact-content {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
     align-items: center;
   }
 

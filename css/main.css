@@ -250,6 +250,30 @@ h4 {
   column-gap: 0.75rem;
 }
 
+.contact-content {
+  padding-bottom: 3rem;
+}
+
+.contact-title, .contact-description {
+  text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  row-gap: 0.75rem;
+}
+
+.contact-address {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.contact-information {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -279,7 +303,8 @@ h4 {
   .about-content,
   .support-content,
   .services-content,
-  .app-content {
+  .app-content,
+  .contact-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -293,7 +318,9 @@ h4 {
   }
   .about-info,
   .support-info,
-  .app-info {
+  .app-info,
+  .contact-description,
+  .contact-title {
     text-align: right;
   }
   .app-buttons {
@@ -338,6 +365,10 @@ h4 {
   }
   .services-content {
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .contact-content {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
     align-items: center;
   }
   .home-content,
