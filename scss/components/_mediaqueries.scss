@@ -37,6 +37,11 @@
     align-items: center;
   }
 
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+  }
+
   .svg-img {
     width: 100%;
   }
@@ -112,10 +117,21 @@
     align-items: center;
   }
 
+  .footer-content {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+
+    .footer-social-link {
+      font-size: 1.5rem;
+    }
+  }
+
   .home-content,
   .about-content,
   .support-content,
   .app-content {
     column-gap: 6rem;
   }
+
+
 }
