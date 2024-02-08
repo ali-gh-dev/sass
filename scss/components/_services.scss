@@ -1,0 +1,33 @@
+.services h2 {
+  text-align: center;
+}
+
+.services-content {
+  padding-top: 1rem;
+}
+
+.service {
+  text-align: center;
+  display: grid;
+  row-gap: 1rem;
+  background: var(--container-color);
+  box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.service-btn {
+  background: var(--container-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+
+  &:hover {
+    background: var(--primary-color);
+    color: var(--container-color);
+  }
+}

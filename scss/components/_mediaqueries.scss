@@ -27,7 +27,7 @@
     padding-top: 7rem;
   }
 
-  .home-content, .about-content, .support-content {
+  .home-content, .about-content, .support-content, .services-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -85,5 +85,14 @@
 
   .svg-img {
     width: 500px;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .home-content, .about-content, .support-content {
+    column-gap: 6rem;
   }
 }

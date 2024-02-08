@@ -192,6 +192,39 @@ h4 {
   text-align: center;
 }
 
+.services h2 {
+  text-align: center;
+}
+
+.services-content {
+  padding-top: 1rem;
+}
+
+.service {
+  text-align: center;
+  display: grid;
+  row-gap: 1rem;
+  background: var(--container-color);
+  box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.service-btn {
+  background: var(--container-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.service-btn:hover {
+  background: var(--primary-color);
+  color: var(--container-color);
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -217,7 +250,7 @@ h4 {
   .home {
     padding-top: 7rem;
   }
-  .home-content, .about-content, .support-content {
+  .home-content, .about-content, .support-content, .services-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -266,6 +299,13 @@ h4 {
   }
   .svg-img {
     width: 500px;
+  }
+  .services-content {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .home-content, .about-content, .support-content {
+    column-gap: 6rem;
   }
 }
 
