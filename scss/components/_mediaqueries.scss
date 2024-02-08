@@ -27,7 +27,11 @@
     padding-top: 7rem;
   }
 
-  .home-content, .about-content, .support-content, .services-content {
+  .home-content,
+  .about-content,
+  .support-content,
+  .services-content,
+  .app-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -36,12 +40,20 @@
     width: 100%;
   }
 
-  .home-img, .about-info {
+  .home-img,
+  .about-info,
+  .app-info {
     order: 2;
   }
 
-  .about-info, .support-info {
+  .about-info,
+  .support-info,
+  .app-info {
     text-align: right;
+  }
+
+  .app-buttons {
+    justify-content: right;
   }
 
 }
@@ -92,7 +104,10 @@
     align-items: center;
   }
 
-  .home-content, .about-content, .support-content {
+  .home-content,
+  .about-content,
+  .support-content,
+  .app-content {
     column-gap: 6rem;
   }
 }

@@ -225,6 +225,31 @@ h4 {
   color: var(--container-color);
 }
 
+.app-content {
+  gap: 2.5rem;
+}
+
+.app-info {
+  text-align: center;
+}
+
+.app-description {
+  margin-bottom: 1.5rem;
+}
+
+.app-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-flex {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -250,18 +275,29 @@ h4 {
   .home {
     padding-top: 7rem;
   }
-  .home-content, .about-content, .support-content, .services-content {
+  .home-content,
+  .about-content,
+  .support-content,
+  .services-content,
+  .app-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
   .svg-img {
     width: 100%;
   }
-  .home-img, .about-info {
+  .home-img,
+  .about-info,
+  .app-info {
     order: 2;
   }
-  .about-info, .support-info {
+  .about-info,
+  .support-info,
+  .app-info {
     text-align: right;
+  }
+  .app-buttons {
+    justify-content: right;
   }
 }
 @media screen and (min-width: 768px) {
@@ -304,7 +340,10 @@ h4 {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
-  .home-content, .about-content, .support-content {
+  .home-content,
+  .about-content,
+  .support-content,
+  .app-content {
     column-gap: 6rem;
   }
 }

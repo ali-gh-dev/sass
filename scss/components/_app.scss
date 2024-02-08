@@ -1,0 +1,24 @@
+.app-content {
+  gap: 2.5rem;
+}
+
+.app-info {
+  text-align: center;
+}
+
+.app-description {
+  margin-bottom: 1.5rem;
+}
+
+.app-buttons{
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-flex{
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
