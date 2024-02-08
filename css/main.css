@@ -188,6 +188,10 @@ h4 {
   text-align: center;
 }
 
+.support-info {
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
@@ -213,7 +217,7 @@ h4 {
   .home {
     padding-top: 7rem;
   }
-  .home-content, .about-content {
+  .home-content, .about-content, .support-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -223,7 +227,7 @@ h4 {
   .home-img, .about-info {
     order: 2;
   }
-  .about-info {
+  .about-info, .support-info {
     text-align: right;
   }
 }

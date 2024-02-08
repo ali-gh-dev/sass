@@ -27,7 +27,7 @@
     padding-top: 7rem;
   }
 
-  .home-content, .about-content {
+  .home-content, .about-content, .support-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -40,7 +40,7 @@
     order: 2;
   }
 
-  .about-info {
+  .about-info, .support-info {
     text-align: right;
   }
 
