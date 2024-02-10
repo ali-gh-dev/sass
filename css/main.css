@@ -330,6 +330,32 @@ h4 {
   color: var(--text-color);
 }
 
+.scrollup {
+  background: yellow;
+  padding: 0.3rem 0.7rem 0.9rem 0;
+  position: fixed;
+  right: 2rem;
+  bottom: -10rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+.scrollup:hover {
+  opacity: 1;
+}
+
+.scrollup-icon {
+  color: red;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
