@@ -17,6 +17,27 @@
   --ff-primary: "vazir", sans-serif;
 }
 
+i.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.1rem;
+  color: var(--text-color);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+body.dark-theme {
+  --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+}
+
+body.dark-theme .footer {
+  background: var(--container-color);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +54,7 @@ body {
   line-height: 2;
   font-size: 1rem;
   text-align: right;
+  transition: 0.5s;
 }
 
 .container {
@@ -419,6 +441,9 @@ h4 {
     flex-direction: row;
     align-items: center;
     column-gap: 2.5rem;
+  }
+  .nav-menu .change-theme {
+    position: unset;
   }
   .nav-toggle {
     display: none;
